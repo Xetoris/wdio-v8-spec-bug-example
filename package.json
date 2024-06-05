@@ -1,0 +1,37 @@
+{
+  "name": "wdio-v8-spec-bug-example",
+  "version": "1.0.0",
+  "description": "A simple repo to demonstrate what I suspect is a bug with v8 and Windows.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "wdio": "pnpm exec wdio ./wdio-example/config/config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xetoris/wdio-v8-spec-bug-example.git"
+  },
+  "author": "cmccord4pa@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xetoris/wdio-v8-spec-bug-example/issues"
+  },
+  "homepage": "https://github.com/Xetoris/wdio-v8-spec-bug-example#readme",
+  "dependencies": {
+    "@types/chai": "~4.3.16",
+    "@types/mocha": "~10.0.6",
+    "@types/node": "~20.14.2",
+    "@wdio/cli": "~8.38.2",
+    "@wdio/globals": "~8.38.2",
+    "@wdio/junit-reporter": "~8.38.2",
+    "@wdio/local-runner": "~8.38.2",
+    "@wdio/mocha-framework": "~8.38.2",
+    "@wdio/spec-reporter": "~8.38.2",
+    "@wdio/types": "~8.38.2",
+    "chai": "~5.1.1",
+    "mocha": "~10.4.0",
+    "webdriverio": "~8.38.2",
+    "ts-node": "~10.9.2",
+    "typescript": "~5.4.5"
+  }
+}
