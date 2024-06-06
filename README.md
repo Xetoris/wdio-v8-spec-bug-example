@@ -49,8 +49,8 @@ https://github.com/webdriverio/webdriverio/blob/main/packages/wdio-config/src/no
 
 This is the other half of the issue -- we don't do anything before passing the converted CLI arg to `globSync()`. This
 means the pattern going in is `C:\Github\my-repo\some\relative\path\*.spec.ts`. According to the glob package, patterns
-should not use "\" because they represent escape characters. This means our updated pattern won't match anything as the
-separators are being miss-interpreted. If you want to use "\" separators (because of Windows), you have to enable a
+should not use "\\" because they represent escape characters. This means our updated pattern won't match anything as the
+separators are being miss-interpreted. If you want to use "\\" separators (because of Windows), you have to enable a
 special flag called "windowsPathsNoEscape".
 
 The CWD parameter doesn't matter here according to the glob package docs, because the pattern starts with a letter drive.
