@@ -5,7 +5,7 @@ A simple repo to demonstrate what I suspect is a bug with v8 and Windows.
 
 ## The Symptom
 
-When running on my work machine and experimenting with v8 updated, I noticed that I stopped being able to run tests
+When running on my work machine and experimenting with the v8 update, I noticed that I stopped being able to run tests
 when providing a glob pattern on the cli.
 
 Example:
@@ -36,7 +36,7 @@ the provided cli value:
 https://github.com/webdriverio/webdriverio/blob/main/packages/wdio-config/src/node/utils.ts#L51
 
 Because _Windows is special_, this results in changing a blob pattern from something like `/some/relative/path/*.spec.ts`
-to `C:\Github\my-repo\some\relative\path\*.spec.ts`. Note that the separator character has changed to a "\".
+to `C:\Github\my-repo\some\relative\path\*.spec.ts`. Note that the separator character has changed to a "\\".
 
 But nothing is amiss yet.
 
